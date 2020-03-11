@@ -33,6 +33,14 @@ declare module "react-native-maps" {
     y: number;
   }
 
+  export interface MapMbTileProps {
+    pathTemplate: string;
+    tileSize: number;
+    zIndex?: number;
+}
+export class MbTile extends React.Component<MapMbTileProps, any> { }
+
+
   // helper interface
   export interface MapEvent<T = {}>
     extends NativeSyntheticEvent<
